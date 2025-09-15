@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Change Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌍 Climate Change Dashboard</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="statistics.html">Statistics</a>
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <!-- Temperature Rise -->
+    <div class="card">
+      <h2>Global Temperature Rise (°C)</h2>
+      <canvas id="tempChart"></canvas>
+    </div>
+
+    <!-- CO2 Emissions -->
+    <div class="card">
+      <h2>CO₂ Emissions by Sector</h2>
+      <canvas id="co2Chart"></canvas>
+    </div>
+
+    <!-- Sea Level Rise -->
+    <div class="card">
+      <h2>Projected Sea Level Rise (mm)</h2>
+      <canvas id="seaLevelChart"></canvas>
+    </div>
+
+    <!-- Climate Awareness -->
+    <div class="card wide">
+      <h2>Recent Climate News & Awareness</h2>
+      <ul>
+        <li>🌍 Global average temperature has risen by 1.2°C since pre-industrial times.</li>
+        <li>🚗 Transport sector contributes to 25% of CO₂ emissions globally.</li>
+        <li>🌊 Sea levels projected to rise by over 1 meter by 2100 if emissions continue.</li>
+        <li>🌱 Renewable energy could reduce global emissions by 70% by 2050.</li>
+      </ul>
+      <button onclick="alert('More info coming soon!')">Learn More</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Climate Change Awareness | Built with ❤️ for a sustainable future</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
